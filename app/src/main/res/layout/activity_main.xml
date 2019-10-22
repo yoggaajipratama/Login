@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ktp"/>
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PENDAFTARAN KTP ONLINE"
+        android:textSize="12pt"
+        android:layout_below="@id/img"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="20sp"/>
+    <EditText
+        android:id="@+id/nik"
+        android:inputType="textNoSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIK"
+        android:layout_below="@id/txt"/>
+    <EditText
+        android:id="@+id/pass"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nik"
+        android:hint="Password"/>
+    <Button
+        android:id="@+id/btn"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:textColor="#ffff"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@id/pass"
+        android:text="LOGIN"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/lupa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password"
+        android:background="#ff00"
+        android:textColor="#fff"
+        android:layout_below="@id/btn"/>
+
+</RelativeLayout>

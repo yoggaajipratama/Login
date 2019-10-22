@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lupa">
+
+    <EditText
+        android:id="@+id/hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:hint="Masukkan nomor handphone"
+        android:inputType="textNoSuggestions"
+        android:layout_marginBottom="10pt"/>
+    <Button
+        android:id="@+id/kirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hp"
+        android:text="Kirim kode"
+        android:textColor="#ff00"
+        android:background="#ffff00"/>
+</RelativeLayout>
